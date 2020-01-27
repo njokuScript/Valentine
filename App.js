@@ -1,12 +1,25 @@
 import React from "react";
-import { Text, View } from "react-native";
+import WelcomeScreen from "./screens/WelcomeScreen.js";
+import YesHomeScreen from "./screens/YesHomeScreen.js";
+import NoHomeScreen from "./screens/NoHomeScreen.js";
+import { createStackNavigator } from "react-navigation-stack";
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <View>
-        <Text> textInComponent </Text>
-      </View>
-    );
+const AppNavigation = createStackNavigator(
+  {
+    Welcome: {
+      screen: WelcomeScreen
+    },
+    Yes: {
+      screen: YesHomeScreen
+    },
+    No: {
+      screen: NoHomeScreen
+    }
+  },
+  {
+    initialRouteName: Welcome
+  },
+  {
+    headerMode: "none"
   }
-}
+);
