@@ -17,13 +17,13 @@ export default class WelcomeScreen extends React.Component {
             style={styles.buttonStyle}
             onPress={this.props.navigation.navigate("Yes")}
           >
-            <Text>YES</Text>
+            <Text style={styles.buttonTextStyle}>YES</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.buttonStyle2}
             onPress={this.props.navigation.navigate("No")}
           >
-            <Text style={styles.buttontTextStyle2}>MAD OH</Text>
+            <Text style={styles.buttonTextStyle2}>MAD OH</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -85,9 +85,15 @@ const styles = StyleSheet.create({
     width: 329,
     height: 58
   },
-  buttontTextStyle2: {
+  buttonTextStyle2: {
     textAlign: "center",
     color: "#FE3898",
+    fontWeight: "bold",
+    fontSize: "25"
+  },
+  buttonTextStyle: {
+    textAlign: "center",
+    color: "#fff",
     fontWeight: "bold",
     fontSize: "25"
   }
