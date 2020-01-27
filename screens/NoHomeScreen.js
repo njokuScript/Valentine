@@ -1,5 +1,12 @@
 import React from "react";
-import { Text, View, style, StyleSheet } from "react-native";
+import {
+  Text,
+  View,
+  style,
+  StyleSheet,
+  Image,
+  TouchableOpacity
+} from "react-native";
 
 export default class NoHomeScreen extends React.Component {
   render() {
@@ -15,7 +22,7 @@ export default class NoHomeScreen extends React.Component {
         <View style={styles.containerButton}>
           <TouchableOpacity
             style={styles.buttonStyle}
-            onPress={this.props.navigation.navigate("Welcome")}
+            onPress={() => this.props.navigation.navigate("Welcome")}
           >
             <Text style={styles.buttontTextStyle}>TAKE ME BACK</Text>
           </TouchableOpacity>
@@ -38,22 +45,24 @@ const styles = StyleSheet.create({
   textStyle1: {
     alignItems: "center",
     width: 342,
-    height: 93,
+    height: 250,
     textAlign: "center",
     fontWeight: "bold",
     fontSize: 27,
     color: "#000",
-    opacity: 1
+    opacity: 1,
+    top: 100
   },
   textStyle2: {
     alignItems: "center",
     width: 342,
     height: 93,
     textAlign: "center",
-    fontWeight: 300,
+    fontWeight: "300",
     fontSize: 20,
-    color: "#cccccc",
-    opacity: 1
+    color: "#607083",
+    opacity: 1,
+    bottom: 50
   },
   containerButton: {
     textAlign: "center",
@@ -84,6 +93,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "#fff",
     fontWeight: "bold",
-    fontSize: "25"
+    fontSize: 22,
+    marginTop: 9
   }
 });
