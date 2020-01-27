@@ -17,8 +17,9 @@ export default class YesHomeScreen extends React.Component {
           source={require("../assets/love.gif")}
         />
         <Text style={styles.textStyle1}>
-          My Love, My baby, Woman of my dreams. I can't think of a better person
-          to spend my life with, I Love you so much
+          As long as there is me, your heart will be the best it can ever be. To
+          keep your heart unbroken is a promise I am willing to keep. I love you
+          babee.
         </Text>
         <Text style={styles.textStyle2}>
           Awwwwwnnnnn🙈🙈🌹 I love you too babe.
